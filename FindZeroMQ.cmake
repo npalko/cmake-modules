@@ -1,5 +1,16 @@
-# Try to find ZeroMQ (libzmq)
+# FindZeroMQ
+#
+# Defines:
+#  ZeroMQ_FOUND
+#	 ZeroMQ_LIBRARY				full path to library
+#	 ZeroMQ_LIBRARY_DIR		folder for library
+#  ZeroMQ_INCLUDE_DIR		folder for include files
 
-set (ZMQ_FOUND TRUE)
-set (ZMQ_INCLUDE_DIR "C:/Users/Nicholas Palko/Documents/Development/zeromq2/include")
-set (ZMQ_LIBRARY "C:/Users/Nicholas Palko/Documents/Development/zeromq2/lib")
+
+#  FIND_FILE(), FIND_LIBRARY(), FIND_PATH() and FIND_PROGRAM()
+# ${CMAKE_SHARED_LIBRARY_SUFFIX}
+
+set (ZeroMQ_FOUND TRUE)
+
+find_library (ZeroMQ_LIBRARY zmq)
+
